@@ -1,0 +1,272 @@
+body {
+  background: #9ab9d0;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+.logo {
+  width: 500px;
+}
+.textbox {
+  margin: auto;
+  border: white solid;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  font-size: 3rem;
+}
+.tag {
+  font-size: 2rem;
+}
+.info {
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+#slider {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  -webkit-appearance: none;
+  height: 30px;
+  width: 80%;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #f0ba78, #02173b);
+  opacity: 1;
+  -webkit-transition: .2s;
+}
+#slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+}
+#slider::-webkit-slider-thumb{
+  background: #fcf1b1;
+}
+
+.slidercontainer {
+  display: flex;
+}
+
+
+.emojiface {
+  border-radius: 50%;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #fcf1b1;
+  left: 10%;
+}
+
+
+.sliderbg {
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  height: 30px;
+  width: 85%;
+  border-radius: 30px;
+  background-image: linear-gradient(to left, #f0ba78, #02173b);
+  opacity: 1;
+}
+
+
+.rightbox {
+  display: block;
+  width: 100vw;
+  height: 50vh;
+  background: darken(#eff3f9,20%);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.rightwave {
+  opacity: 1;
+  position: absolute;
+  top: 100%;
+  right: -10%;
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.rightwave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.rightwave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+}
+
+.leftwave {
+  opacity: 1;
+  position: absolute;
+  top: 100%;
+  left: -10%;
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.leftwave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.leftwave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+}
+
+.centerRightwave {
+  opacity: 1;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.centerRightwave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.centerRightwave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+}
+
+.centerLeftwave {
+  opacity: 1;
+  position: absolute;
+  top: 120%;
+  right: 50%;
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.centerLeftwave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.centerLeftwave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+}
+
+.centerwave {
+  opacity: 1;
+  position: absolute;
+  top: 130%;
+  right: 30%;
+  background: white;
+  width: 500px;
+  height: 500px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+}
+
+.centerwave.-three {
+  animation: drift 5000ms infinite linear;
+  z-index: 2 !important;
+  opacity: 0.2;
+}
+
+.centerwave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+}
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.eye1 {
+  position: absolute;
+  top: 48px;
+  left: 20px;
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  top: 48px;
+  animation: emoji1-eyes-blink 1s ease-in-out infinite;
+  animation-direction: alternate;
+
+}
+.eye2 {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+  top: 48px;
+left: 74px;
+  animation: emoji1-eyes-blink 1s ease-in-out infinite;
+  animation-direction: alternate;
+    }
+.mouth {
+        position: absolute;
+        height: 3px;
+        width: 35px;
+        background-color: #414141;
+        border-radius: 5px;
+        top: 68px;
+        left:35px;
+        animation-direction: alternate;
+    }
+@keyframes emoji1-eyes-blink {
+    0% {
+        height: 10px;
+    }
+    97% {
+        height: 10px;
+    }
+    100% {
+        height: 0px;
+    }
+}
